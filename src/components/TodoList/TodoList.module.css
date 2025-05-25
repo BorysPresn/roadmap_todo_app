@@ -1,0 +1,14 @@
+.title {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    color: #9E78CF;
+    list-style-type: none;
+    gap: 16px;
+}
+

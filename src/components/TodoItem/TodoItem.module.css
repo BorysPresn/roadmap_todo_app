@@ -1,0 +1,37 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 21px 22.5px;
+    background-color: #15101C;
+}
+
+.completed {
+    color: #78CFB0;
+    text-decoration: line-through;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.checkbox, .trash {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 1px solid #9E78CF;
+    border-radius: 5px;
+}
+
+.checked {
+    background: url('/src/assets/done.svg') no-repeat center;
+}
+
+.trash {
+    background: url('/src/assets/trash.svg') no-repeat center;
+}
