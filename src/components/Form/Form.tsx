@@ -17,7 +17,6 @@ const Form: React.FC = () => {
   const dispatch = useAppDispatch()
 
   const submit: SubmitHandler<FormData> = (formState) => {
-    console.log(formState)
     dispatch(addTodo({ text: formState.text }))
     reset()
   }
