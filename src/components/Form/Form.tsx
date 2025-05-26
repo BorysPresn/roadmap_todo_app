@@ -32,7 +32,8 @@ const Form: React.FC = () => {
       />
       <button
         type="submit"
-        className={`${cl.button} ${isValid && 'disabled'}`}
+        className={`${cl.button}`}
+        disabled={!isValid}
       />
     </form>
   )

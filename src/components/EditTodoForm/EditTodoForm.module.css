@@ -1,0 +1,28 @@
+.modal_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #777777;
+}
+
+.textarea {
+    padding: 10px;
+    border: 2px solid #3E1671;
+    background-color: #0D0714;
+    height: 200px;
+    color: inherit;
+    resize: none;
+    outline: #9a7ac4;
+    border-radius: 10px;
+}
+.textarea:focus {
+    border: 2px solid #9a7ac4;
+}
+
+.btn {
+    background-color: #9E78CF;
+    color: #FFF;
+    align-self: flex-end;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}

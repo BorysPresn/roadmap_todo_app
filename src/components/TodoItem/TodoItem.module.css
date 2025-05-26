@@ -1,9 +1,15 @@
 li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5px;
     border-radius: 10px;
-    padding: 21px 22.5px;
+    padding: 22px;
     background-color: #15101C;
+}
+
+.todo_text {
+    overflow-wrap: anywhere;
 }
 
 .completed {
@@ -16,7 +22,7 @@ li {
     gap: 8px;
 }
 
-.checkbox, .trash {
+.checkbox, .trash, .edit {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -30,6 +36,11 @@ li {
 
 .checked {
     background: url('/src/assets/done.svg') no-repeat center;
+}
+
+.edit {
+    background: url('/src/assets/edit.svg') no-repeat center;
+    background-size: contain;
 }
 
 .trash {

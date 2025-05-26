@@ -1,0 +1,13 @@
+.action_buttons {
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #9E78CF;
+    color: #FFF;
+    align-self: flex-end;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}

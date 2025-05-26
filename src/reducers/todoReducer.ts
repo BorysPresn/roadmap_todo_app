@@ -33,8 +33,18 @@ export const todosSlice = createSlice({
       }
       return state
     },
+    updateTodo: (state, action: PayloadAction<{id: number, text: string}>) => {
+      const newState = state.map(todo => {
+        if(todo.id === action.payload.id) {
+          return {...todo, text: action.payload.text}
+        }
+        return todo
+      })
+      saveTodoToLocalStorage(newState);
+      return newState;
+    }
   },
 })
 
-export const { addTodo, deleteTodo, toggleTodo } = todosSlice.actions
+export const { addTodo, deleteTodo, toggleTodo, updateTodo } = todosSlice.actions
 export const todosReducer = todosSlice.reducer
