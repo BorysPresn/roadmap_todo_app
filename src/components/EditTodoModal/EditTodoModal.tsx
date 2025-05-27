@@ -1,6 +1,6 @@
 import React from 'react'
 import cl from './EditTodoModal.module.css'
-import Modal from '../UI/Modal'
+import Modal from '../Modal/Modal'
 import EditTodoForm from '../EditTodoForm/EditTodoForm'
 
 
@@ -16,7 +16,7 @@ const EditTodoModal: React.FC<EditTodoModalProps> = ({ todoText, onClose, onSave
     <Modal onClose={onClose}>
       <h4>Редактировать задачу</h4>
       <EditTodoForm todoText={todoText} onSave={onSave} />
-      <button type="button" className={`${cl.btn}`} onClick={onClose}>
+      <button type="button" className={cl.btn} onClick={onClose}>
         X
       </button>
     </Modal>

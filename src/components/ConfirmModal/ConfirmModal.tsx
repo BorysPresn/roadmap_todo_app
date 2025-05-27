@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../UI/Modal'
+import Modal from '../Modal/Modal'
 import cl from './ConfirmModal.module.css'
 
 interface ConfirmModalProps {

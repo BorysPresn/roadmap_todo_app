@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
 import cl from './EditTodoForm.module.css'
+import clsx from 'clsx'
 
 interface EditTodoFormProps {
   todoText?: string
@@ -37,7 +38,7 @@ const EditTodoForm: React.FC<EditTodoFormProps> = ({ todoText, onSave }) => {
         })}
       />
       <button
-        className={`${cl.button, cl.btn}`}
+        className={clsx(cl.button, cl.btn)}
         type="submit"
         disabled={!isValid}
       >
